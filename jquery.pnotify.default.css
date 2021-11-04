@@ -1,0 +1,133 @@
+/*
+Document   : jquery.pnotify.default.css
+Created on : Nov 23, 2009, 3:14:10 PM
+Author     : Hunter Perrin
+Version    : 1.2.2
+Link       : http://pinesframework.org/pnotify/
+Description:
+	Default styling for Pines Notify jQuery plugin.
+*/
+/* -- Notice */
+.ui-pnotify {
+	top: 25px;
+	right: 10px;
+	position: absolute;
+	height: 81px;
+	z-index: 9999; 
+	background-color: #4a960f;
+	color: white;
+	font-size: 12px;
+	line-height: 21px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	padding-left: 100px;
+	padding-right: 25px;
+	padding-top: 8px;
+}
+.ui-pnotify.users_online {
+	background: url(users-online.png) no-repeat left 19px center #4a960f;
+	width: 270px !important;
+ 
+	
+}
+body.de .ui-pnotify.users_online,
+body.fr .ui-pnotify.users_online,
+body.es .ui-pnotify.users_online,
+body.pt .ui-pnotify.users_online,
+body.it .ui-pnotify.users_online,
+body.cs .ui-pnotify.users_online,
+body.sk .ui-pnotify.users_online{
+	background: url(users-online.png) no-repeat left 19px center #4a960f;
+	width: 270px !important;
+	display: none!important;
+	
+}
+
+.ui-pnotify.last-bought {
+	padding-top: 0px;
+	padding-left: 97px;
+	padding-right: 5px;
+	width: 330px !important;
+	background: url(last-bought.png) no-repeat left 15px center #4a960f;
+}
+.ui-pnotify.last-bought .ui-pnotify-container {
+	padding-top: 9px !important;
+}
+/* Hides position: fixed from IE6 */
+html > body .ui-pnotify {
+position: fixed;
+}
+.ui-pnotify .ui-pnotify-shadow {
+}
+.ui-pnotify-container {
+background-position: 0 0;
+padding: .8em;
+height: 100%;
+margin: 0;
+}
+.ui-pnotify-sharp {
+-webkit-border-radius: 0;
+-moz-border-radius: 0;
+border-radius: 0;
+}
+.ui-pnotify-closer, .ui-pnotify-sticker {
+float: right;
+margin-left: .2em;
+}
+.ui-pnotify-title {
+display: block;
+margin-bottom: .4em;
+font-weight: bold;
+display: none;
+}
+.ui-pnotify-text {
+display: block;
+}
+.ui-pnotify-text b{
+	font-weight: bold;
+}
+.ui-pnotify-icon, .ui-pnotify-icon span {
+display: block;
+float: left;
+margin-right: .2em;
+}
+/* -- History Pulldown */
+.ui-pnotify-history-container {
+position: absolute;
+top: 0;
+right: 18px;
+width: 70px;
+border-top: none;
+padding: 0;
+-webkit-border-top-left-radius: 0;
+-moz-border-top-left-radius: 0;
+border-top-left-radius: 0;
+-webkit-border-top-right-radius: 0;
+-moz-border-top-right-radius: 0;
+border-top-right-radius: 0;
+/* Ensures history container is above notices. */
+z-index: 10000;
+}
+.ui-pnotify-history-container .ui-pnotify-history-header {
+padding: 2px;
+text-align: center;
+}
+.ui-pnotify-history-container button {
+cursor: pointer;
+display: block;
+width: 100%;
+}
+.ui-pnotify-history-container .ui-pnotify-history-pulldown {
+display: block;
+margin: 0 auto;
+}
+/* Alternate stack initial positioning. */
+.ui-pnotify.stack-topleft, .ui-pnotify.stack-bottomleft {
+left: 25px;
+right: auto;
+}
+.ui-pnotify.stack-bottomright, .ui-pnotify.stack-bottomleft {
+bottom: 30px;
+top: auto;
+}
